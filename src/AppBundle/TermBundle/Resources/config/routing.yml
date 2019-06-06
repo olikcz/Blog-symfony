@@ -1,0 +1,23 @@
+term_list:
+  path: /term
+  controller: TermBundle:Term:list
+
+term_add:
+  path: /term/add
+  controller: TermBundle:Term:add
+
+term_view:
+  path: /term/{id}
+  controller: TermBundle:Term:view
+
+term_edit:
+  path: /term/{id}/edit
+  controller: TermBundle:Term:edit
+
+term_delete:
+  path: /term/{id}/delete
+  controller: TermBundle:Term:remove
+#
+#
+#
+#

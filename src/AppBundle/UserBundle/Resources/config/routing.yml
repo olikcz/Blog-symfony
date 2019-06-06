@@ -1,0 +1,15 @@
+add_user:
+  path: admin/user/add
+  controller: UserBundle:Security:add
+
+login:
+  path: /login
+  controller: UserBundle:Security:login
+
+register:
+  path: /register
+  controller: UserBundle:Security:register
+
+logout:
+  path: /logout
+  controller: UserBundle:Security:logout

@@ -1,0 +1,180 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: BOSS
+ * Date: 31.05.2019
+ * Time: 13:07
+ */
+
+namespace AppBundle\UserBundle\Entity;
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\Role\RoleInterface;
+
+
+/**
+ * Class Role
+ * @package UserBundle\Entity
+ * @ORM\Entity()
+ * @ORM\Table(name="role")
+ */
+class Role implements RoleInterface
+{
+    /**
+     * @var
+     * @ORM\Column(type="integer")
+     * @ORM\Id()
+     * @ORM\GeneratedValue(strategy="AUTO")
+     *
+     */
+    private $id;
+
+    /**
+     * Many Groups have Many Users.
+     * @ORM\ManyToMany(targetEntity="User", mappedBy="roles")
+     */
+    private $users;
+
+    /**
+     * @var
+     * @ORM\Column(type = "string", length=255)
+     */
+    private $name;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $role;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->users = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     *
+     * @return Role
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set createdAt
+     *
+     * @param \Datetime $createdAt
+     *
+     * @return Role
+     */
+    public function setCreatedAt(\Datetime $createdAt)
+    {
+        $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    /**
+     * Get createdAt
+     *
+     * @return \Datetime
+     */
+    public function getCreatedAt()
+    {
+        return $this->createdAt;
+    }
+
+    /**
+     * Set updatedAt
+     *
+     * @param \Datetime $updatedAt
+     *
+     * @return Role
+     */
+    public function setUpdatedAt(\Datetime $updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get updatedAt
+     *
+     * @return \Datetime
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
+    }
+
+    /**
+     * Add user
+     *
+     * @param User $user
+     *
+     * @return Role
+     */
+    public function addUser(User $user)
+    {
+        $this->users[] = $user;
+
+        return $this;
+    }
+
+    /**
+     * Remove user
+     *
+     * @param User $user
+     */
+    public function removeUser(User $user)
+    {
+        $this->users->removeElement($user);
+    }
+
+    /**
+     * Get users
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getUsers()
+    {
+        return $this->users;
+    }
+
+    public function setRole($role){
+        $this->role = $role;
+    }
+
+    public function getRole()
+    {
+        return $this->role;
+    }
+}

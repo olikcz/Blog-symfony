@@ -1,0 +1,17 @@
+admin_page:
+  path: /admin
+  controller: AdminBundle:Admin:dashboard
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,103 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+  <div class="row">
+    <div class="col-md-2 mt-3">
+      <div class="list-group">
+        <p class="list-group-item list-group-item-action active"></p>
+        <a href="{{ path('page_add') }}" class="list-group-item list-group-item-action">Add page</a>
+        <a href="{{ path('term_add') }}" class="list-group-item list-group-item-action">Add category</a>
+        <a href="#" class="list-group-item list-group-item-action">Add user</a>
+      </div>
+    </div>
+    <div class="col-md-6 mt-3">
+      {% for message in app.flashes('success') %}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          {{ message }}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      {% endfor %}
+      {% for message in app.flashes('info') %}
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+          {{ message }}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      {% endfor %}
+      {% for message in app.flashes('warning') %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          {{ message }}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      {% endfor %}
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Title</th>
+          <th>Category</th>
+          <th>User</th>
+          <th>Comments</th>
+          <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for page in pages %}
+          <tr>
+            <td scope="row">
+              <small>{{ page.title }}</small>
+            </td>
+            <td>
+              <small>{{ page.category.name }}</small>
+            </td>
+            <td>
+              <small>{{ page.user.username }}</small>
+            </td>
+            <td>
+              <small>{{ page.comments|length }}</small>
+            </td>
+            <td><a href="{{ path('page_edit', { 'id' : page.id }) }}" class="btn btn-sm btn-info">Edit </a>
+              <a href="{{ path('page_delete', { 'id' : page.id }) }}" class="btn btn-sm btn-danger">
+                Delete </a>
+              <a href="{{ path('page_view', { 'id' : page.id }) }}" class="btn btn-sm btn-success">
+                View </a>
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          {% if navigator.pager > 1 %}
+            <li class="page-item">
+              <a href="{{ path('admin_page', { 'page' : navigator.pager - 1 }) }}"
+                 class="page-link">Back</a>
+            </li>
+          {% endif %}
+
+          <li class="page-item">
+            <a href="{{ path('admin_page', { 'page' : navigator.pager }) }}"
+               class="page-link">{{ navigator.pager }}</a>
+          </li>
+
+          {% if navigator.pager*navigator.limit < navigator.total %}
+            <li class="page-item">
+              <a href="{{ path('admin_page', {'page' : navigator.pager + 1 }) }}"
+                 class="page-link">Next</a>
+            </li>
+          {% endif %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+{% endblock %}
+
+
+
+
