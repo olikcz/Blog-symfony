@@ -202,31 +202,7 @@ class Comment
         return $this->parent_comment_id;
     }
 
-    /**
-     * Set replies
-     *
-     * @param boolean $replies
-     *
-     * @return Comment
-     */
-    public function setReplies($replies)
-    {
-        $this->replies = $replies;
-
-        return $this;
-    }
-
-    /**
-     * Get replies
-     *
-     * @return boolean
-     */
-    public function getReplies()
-    {
-        return $this->replies;
-    }
-
-    /**
+     /**
      * Set isDeleted
      *
      * @param boolean $isDeleted

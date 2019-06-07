@@ -25,19 +25,17 @@ class CommentLoad extends Fixture implements DependentFixtureInterface
         $userRepo = $manager->getRepository(User::class);
         $user = $userRepo->findOneByusername('admin');
         $pages = $pageRepo->findAll();
-        foreach ($pages as $page){
-            for($i=1; $i <= 2; $i++){
-                $comment = new Comment();
-                $comment->setComment('Comment '.$i.' > '.$page->getTitle());
-                $comment->setUser($user);
-                $comment->setParentCommentId(1);
-                $comment->setIsDeleted(false);
-                $page->addComment($comment);
-                $comment->setPage($page);
-            }
+        foreach($pages as $page){
+            $comment = new Comment();
+            $comment->setComment('Comment '.$page->getTitle());
+            $comment->setUser($user);
+            $comment->setParentCommentId(1);
+            $comment->setIsDeleted(true);
+            $page->addComment($comment);            
+            $comment->setPage($page);
             $manager->persist($page);
-        }
-        $manager->flush();
+            $manager->flush();            
+        }        
     }
 
     function getDependencies()
