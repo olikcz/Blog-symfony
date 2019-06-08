@@ -10,7 +10,9 @@ namespace AppBundle\UserBundle\Controller;
 
 use AppBundle\UserBundle\Entity\Role;
 use AppBundle\UserBundle\Entity\User;
+use AppBundle\UserBundle\Forms\DeleteRoleForm;
 use AppBundle\UserBundle\Forms\RegisterForm;
+use AppBundle\UserBundle\Forms\RoleForm;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
@@ -59,10 +61,41 @@ class SecurityController extends Controller
             'registrationForm' => $form->createView()
         ]);
     }
-    public function logoutAction(){
+    public function addRoleAction(Request $request){
+        $em = $this->getDoctrine()->getManager();
+        $userRepo = $this->getDoctrine()->getRepository(User::class);
+        $form = $this->createForm(RoleForm::class);
+        $form->handleRequest($request);
+        if($form->isSubmitted() && $form->isValid()){
+            $roleUserForm = $form->getData();
+            $user = $userRepo->find($roleUserForm['user']->getId());
+            $user->addRole($roleUserForm['role']);
+            $em->persist($user);
+            $em->flush();
+        }
+        return $this->render('@User/Page/role.html.twig',[
+            'roleForm' => $form->createView()
+        ]);
     }
 
-    public function addAction(){
+    public function deleteRoleAction(Request $request){
+        $em = $this->getDoctrine()->getManager();
+        $userRepo = $this->getDoctrine()->getRepository(User::class);
+        $form = $this->createForm(DeleteRoleForm::class);
+        $form->handleRequest($request);
+        if($form->isSubmitted() && $form->isValid()){
+            $roleUserForm = $form->getData();
+            $user = $userRepo->find($roleUserForm['user']->getId());
+            $user->removeRole($roleUserForm['role']);
+            $em->persist($user);
+            $em->flush();
+
+//            removeRole
+
+        }
+        return $this->render('@User/Page/deleteRole.html.twig',[
+            'roleForm' => $form->createView()
+        ]);
     }
 }
 
