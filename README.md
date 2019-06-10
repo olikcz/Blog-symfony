@@ -4,15 +4,24 @@
 Symfony Standard Edition
 ========================
 
-**WARNING**: This distribution does not support Symfony 4. See the
-[Installing & Setting up the Symfony Framework][15] page to find a replacement
-that fits you best.
+Simple blog based on symfony 3.
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony
-application that you can use as the skeleton for your new applications.
+Installation:
 
-For details on how to download and get started with Symfony, see the
-[Installation][1] chapter of the Symfony Documentation.
+$ git clone https://github.com/olikcz/Blog-symfony.git
+$ cd Blog-symfony
+$ composer install
+
+$ php bin/console doctrine:database:create
+$ php bin/console doctrine:schema:update --force
+$ php bin/console doctrine:fixtures:load
+
+$ php bin/console server:run
+
+username: admin
+password: 123456
+
+
 
 What's inside?
 --------------
@@ -78,4 +87,3 @@ Enjoy!
 [13]: https://symfony.com/doc/current/bundles/SensioGeneratorBundle/index.html
 [14]: https://symfony.com/doc/current/setup/built_in_web_server.html
 [15]: https://symfony.com/doc/current/setup.html
->>>>>>> 2d43563723f2efdd55a8cb7fe688deece613008a
