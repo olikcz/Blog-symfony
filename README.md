@@ -18,6 +18,14 @@ $ php bin/console doctrine:fixtures:load
 $ php bin/console server:run
 ```
 
+```
+ rename
+  symfony_blog\app\config\parameters.yml.dist 
+ to
+  symfony_blog\app\config\parameters.yml
+```
+
+
 # Login
 username: admin
 password: 123456
