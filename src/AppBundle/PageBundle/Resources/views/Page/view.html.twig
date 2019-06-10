@@ -1,7 +1,6 @@
 {% extends '@App/Layout/layout-two-col-4-8.html.twig' %}
 
-
-{% block regionRight %}
+{% block content %}
   <div class="block block--page-view">
     <span>
         {% if is_granted('ROLE_ADMIN') %}
@@ -13,7 +12,10 @@
       <a href="{{ path('page_view', {'id' : page.id}) }}"><h2 class="field field-title">{{ page.title }}</h2></a>
       <div class="field field-body">{{ page.body }}</div>
       <div class="field field-category">{{ page.category.name }}</div>
-      <div class="field field-created">{{ page.created |date('d-m-Y') }}</div>
+      <div class="field field-created">{{ page.created |date("H:i d/m/Y") }}</div>
+      {% if page.updatedAt != null %}
+        <div class="field field-updated">{{ page.updatedAt |date("H:i d/m/Y") }}</div>
+      {% endif %}
       <div class="field field-comments">
         <div class="comment-preview">
           <h2 class="comment-title">Comments</h2>

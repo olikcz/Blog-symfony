@@ -44,12 +44,17 @@ class User implements UserInterface, \Serializable
     private $username;
 
     /**
-     * Many Groups have Many UserBundle.
+     *
      * @ORM\OneToMany(targetEntity="AppBundle\CommentBundle\Entity\Comment", mappedBy="user", cascade={"persist", "remove"})
      * @ORM\OrderBy({"id" = "DESC"})
-
      */
     private $comments;
+
+    /**
+     *
+     * @ORM\OneToMany(targetEntity="AppBundle\PageBundle\Entity\Page", mappedBy="user", cascade={"persist", "remove"})     *
+     */
+    private $pages;
 
 
     /**

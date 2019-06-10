@@ -44,7 +44,7 @@ class Page
     private $category;
 
     /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\UserBundle\Entity\User",  cascade={"persist", "remove"})
+     * @ORM\ManyToOne(targetEntity="AppBundle\UserBundle\Entity\User" , inversedBy="pages")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      */
     private $user;
@@ -60,6 +60,11 @@ class Page
      * @ORM\Column(type="datetime")
      */
     private $created;
+
+    /**
+     * @ORM\Column(type="datetime",  nullable=true)
+     */
+    private $updatedAt;
 
     public function __construct()
     {
@@ -229,5 +234,29 @@ class Page
     public function getUser()
     {
         return $this->user;
+    }
+
+    /**
+     * Set updatedAt
+     *
+     * @param \DateTime $updatedAt
+     *
+     * @return Page
+     */
+    public function setUpdatedAt($updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get updatedAt
+     *
+     * @return \DateTime
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
     }
 }

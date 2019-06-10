@@ -78,7 +78,8 @@ class SecurityController extends Controller
         ]);
     }
 
-    public function deleteRoleAction(Request $request){
+    public function deleteRoleAction(Request $request)
+    {
         $em = $this->getDoctrine()->getManager();
         $userRepo = $this->getDoctrine()->getRepository(User::class);
         $form = $this->createForm(DeleteRoleForm::class);

@@ -125,6 +125,8 @@ class PageController extends Controller
         $form = $this->createForm(PageForm::class, $page);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
+
+            $page->setUpdatedAt(new \DateTime());
             $em->persist($page);
             $em->flush();
             return $this->redirectToRoute('admin_page', [
