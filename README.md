@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-# Blog-symfony
-=======
-Symfony Standard Edition
-========================
+# Simple blog based on symfony 3.
 
-Simple blog based on symfony 3.
-
-Installation:
+# Installation:
 
 $ git clone https://github.com/olikcz/Blog-symfony.git
 $ cd Blog-symfony
@@ -18,6 +12,7 @@ $ php bin/console doctrine:fixtures:load
 
 $ php bin/console server:run
 
+# Login
 username: admin
 password: 123456
 
