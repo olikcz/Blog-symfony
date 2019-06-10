@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="block block--term-delete mt-3">
+            <div class="block block-content">
+                <div class="alert alert-danger" role="alert">
+                    <h4 class="alert-heading">Warning!</h4>
+                    <p>Are you sure you want to delete Page </p>
+                    <p>Name: {{ term.name }}</p>
+                    <p>Description: {{  term.description }}</p>
+                    <hr>
+                    <p class="mb-0">The delete is pernament.</p>
+                </div>
+                {{  form(form) }}
+            </div>
+        </div>
+    </div>
+
+{%  endblock %}

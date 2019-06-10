@@ -1,0 +1,13 @@
+<article>
+    <a href="{{ path('page_view', {'id' : page.id}) }}"><h2 class="field field-title">{{ page.title }}</h2></a>
+    <small>Category: <a href="{{ path('page_term', { 'id' : item.category.id}) }}">{{ item.category }}</a>,
+        by <a href="{{ path('page_user', { 'id' : item.user.id }) }}">{{ item.user.username }}</a> on {{ item.created|date("H:i d/m/Y") }}
+    </small>
+    <p class="page-content">
+            {{ item.body|length > 350 ? item.body|slice(0, 350) ~ ' ...' : item.body  }}
+    </p>
+    <p class="text-right">
+        {% set path = path('page_view', { 'id' : item.id }) %}
+        <a href="{{ path }}" class="btn btn-primary">Read more</a>
+    </p>
+</article>

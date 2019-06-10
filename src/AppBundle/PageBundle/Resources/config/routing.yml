@@ -1,0 +1,33 @@
+
+page_list:
+  path: /
+  controller: PageBundle:Page:list
+
+page_add:
+  path: admin/page/add
+  controller: PageBundle:Page:add
+
+page_view:
+  path: /page/{id}
+  controller: PageBundle:Page:view
+
+
+page_comments:
+  path: /page/{id}/comments
+  controller: PageBundle:Page:comments
+
+page_edit:
+  path: admin/page/{id}/edit
+  controller: PageBundle:Page:edit
+
+page_delete:
+  path: admin/page/{id}/delete
+  controller: PageBundle:Page:remove
+
+page_term:
+  path: /page/category/{id}
+  controller: PageBundle:Page:category
+
+page_user:
+  path: /page/user/{id}
+  controller: PageBundle:Page:user

@@ -1,0 +1,24 @@
+{% if item.isDeleted == false %}
+
+  {% if(item.ParentCommentId != item.id) %}
+    <div class="card mt-3 ml-3">
+  {% else %}
+    <div class="card mt-3">
+  {% endif %}
+  <div class="card-body m-3">
+    <p class="card-text">{{ item.comment }}</p>
+  </div>
+  <div class="card-footer">
+    {% if is_granted('ROLE_ADMIN') or user.id|default('Guest') == item.user.id %}
+      <a href="{{ path('comment_delete', { 'id' : item.id }) }}" class="float-right btn btn-sm btn-danger ">Delete</a>
+      <a href="{{ path('comment_edit', { 'id' : item.id }) }}" class="float-right btn btn-sm btn-info ">Edit</a>
+
+    {% endif %}
+
+    <a href="{{ path('comment_reply', {'id' : item.ParentCommentId}) }}">Reply</a>
+
+    <small class="field field-created float-left">{{ item.created|date("H:i d/m/Y") }}
+      by {{ item.user.username }} {{ ip }}</small>
+  </div>
+  </div>
+{% endif %}

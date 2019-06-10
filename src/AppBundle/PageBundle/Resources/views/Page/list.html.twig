@@ -1,0 +1,43 @@
+{% extends '@App/Layout/layout-two-col-4-8.html.twig' %}
+
+{% block content %}
+
+    <div class="block--page-list">
+        <div class="block-content">
+            <div class="list--page-list">
+                {% for page in pages %}
+                    <div class="list-item">
+                        {{ include('@Page/ViewMode/teaser.html.twig', { 'item' : page } ) }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            {% if navigator.pager > 1 %}
+                <li class="page-item">
+                    <a href="{{ path('page_list', { 'page' : navigator.pager - 1 }) }}" class="page-link">Back</a>
+                </li>
+            {% endif %}
+
+            <li class="page-item">
+                <a href="{{ path('page_list', { 'page' : navigator.pager }) }}" class="page-link">{{ navigator.pager }}</a>
+            </li>
+
+            {% if navigator.pager*navigator.limit < navigator.total %}
+                <li class="page-item">
+                    <a href="{{ path('page_list', {'page' : navigator.pager + 1 }) }}" class="page-link">Next</a>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
+{% endblock %}
+
+{% block sidebar %}
+    {% for term in terms %}
+        <ul class="list-group">
+            <li class="list-group-item"> <a href="{{ path('page_term', { 'id' : term.id}) }}">{{ term.name }}</a></li>
+        </ul>
+    {% endfor %}
+{% endblock %}

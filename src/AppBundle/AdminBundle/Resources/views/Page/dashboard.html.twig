@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+  <div class="row">
+    {{ include('@Admin/sidebar.html.twig') }}
+
+    <div class="col-md-6 mt-3">
+      {{ include('@Admin/flashMessage.html.twig') }}
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Title</th>
+          <th>Category</th>
+          <th>User</th>
+          <th>Comments</th>
+          <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for page in pages %}
+          <tr>
+            <td scope="row">
+              <small>{{ page.title }}</small>
+            </td>
+            <td>
+              <small>{{ page.category.name }}</small>
+            </td>
+            <td>
+              <small>{{ page.user.username }}</small>
+            </td>
+            <td>
+              <small>{{ page.comments|length }}</small>
+            </td>
+            <td><a href="{{ path('page_edit', { 'id' : page.id }) }}" class="btn btn-sm btn-info">Edit </a>
+              <a href="{{ path('page_delete', { 'id' : page.id }) }}" class="btn btn-sm btn-danger">
+                Delete </a>
+              <a href="{{ path('page_view', { 'id' : page.id }) }}" class="btn btn-sm btn-success">
+                View </a>
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
+      {% block paginator %}
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            {% if navigator.pager > 1 %}
+              <li class="page-item">
+                <a href="{{ path('admin_page', { 'page' : navigator.pager - 1 }) }}"
+                   class="page-link">Back</a>
+              </li>
+            {% endif %}
+
+            <li class="page-item">
+              <a href="{{ path('admin_page', { 'page' : navigator.pager }) }}"
+                 class="page-link">{{ navigator.pager }}</a>
+            </li>
+
+            {% if navigator.pager*navigator.limit < navigator.total %}
+              <li class="page-item">
+                <a href="{{ path('admin_page', {'page' : navigator.pager + 1 }) }}"
+                   class="page-link">Next</a>
+              </li>
+            {% endif %}
+          </ul>
+        </nav>
+      {% endblock %}
+    </div>
+  </div>
+{% endblock %}
+
+
+
+

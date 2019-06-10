@@ -1,0 +1,19 @@
+add_user_role:
+  path: admin/user/role/add
+  controller: UserBundle:Security:addRole
+
+delete_user_role:
+  path: admin/user/role/delete
+  controller: UserBundle:Security:deleteRole
+
+login:
+  path: /login
+  controller: UserBundle:Security:login
+
+register:
+  path: /register
+  controller: UserBundle:Security:register
+
+logout:
+  path: /logout
+  controller: UserBundle:Security:logout

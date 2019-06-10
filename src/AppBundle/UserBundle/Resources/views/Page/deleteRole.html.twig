@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Delete role{% endblock %}
+
+{% block body %}
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 mt-3">
+      <div class="container">
+        <h1>Delete role from user</h1>
+
+        {{ form_start(roleForm) }}
+        {{ form_row(roleForm.role) }}
+        {{ form_row(roleForm.user) }}
+
+        <button class="btn btn-primary">Delete</button>
+        {{ form_end(roleForm) }}
+      </div>
+    </div>
+  </div>
+{% endblock %}
