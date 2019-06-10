@@ -30,6 +30,8 @@ $ php bin/console server:run
 username: admin
 password: 123456
 
+# DB
+![alt text](https://i.imgur.com/t26qYOY.png)
 
 
 What's inside?
