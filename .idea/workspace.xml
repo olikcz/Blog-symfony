@@ -6,35 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f81cb223-4f9d-4579-a888-a791858f4e3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/css/custom.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/security.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/security.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/symfony_requirements" beforeDir="false" afterPath="$PROJECT_DIR$/bin/symfony_requirements" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/AdminBundle/Resources/views/Page/dashboard.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/AdminBundle/Resources/views/Page/dashboard.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/CommentBundle/Resources/views/ViewMode/teaser.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/CommentBundle/Resources/views/ViewMode/teaser.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/CommentBundle/Resources/views/add.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/CommentBundle/Resources/views/add.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/CommentBundle/Resources/views/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/CommentBundle/Resources/views/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/PageBundle/Controller/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/PageBundle/Controller/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/PageBundle/Entity/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/PageBundle/Entity/Page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/add.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/add.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/list.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/page_category.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/page_category.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/page_comments.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/page_comments.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/page_user.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/page_user.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/view.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/view.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Layout/layout-two-col-4-8.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Layout/layout-two-col-4-8.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/views/Page/add.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/views/Page/add.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/views/Page/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/views/Page/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/views/Page/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/views/Page/list.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/views/Page/view.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/views/Page/view.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/views/ViewMode/teaser.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/views/ViewMode/teaser.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/UserBundle/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/UserBundle/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/UserBundle/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/UserBundle/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/UserBundle/Resources/views/Page/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/UserBundle/Resources/views/Page/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/PageBundle/DataFixtures/ORM/PageLoad.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/PageBundle/DataFixtures/ORM/PageLoad.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/ViewMode/categorylist.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/TermBundle/DataFixtures/ORM/TermLoad.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/TermBundle/DataFixtures/ORM/TermLoad.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/config.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,15 +40,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/ViewMode/categorylist.html.twig">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/views/Page/list.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/page_category.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="224">
+              <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
               <folding>
                 <element signature="e#12#52#0#Twig" expanded="true" />
               </folding>
@@ -79,14 +51,50 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/CommentBundle/DataFixtures/ORM/CommentLoad.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="584">
+              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/views/Page/list.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/PageBundle/Controller/PageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1214">
+            <state relative-caret-position="819">
               <caret line="106" column="42" selection-start-line="106" selection-start-column="42" selection-end-line="106" selection-end-column="42" />
               <folding>
                 <element signature="e#132#175#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/PageBundle/DataFixtures/ORM/PageLoad.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/TermBundle/DataFixtures/ORM/TermLoad.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -114,21 +122,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="28">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="e#12#52#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Layout/layout-two-col-4-8.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -186,7 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/AppBundle/UserBundle/Resources/views/Page/register.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/PageBundle/Forms/PageForm.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/ViewMode/teaser.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/TermBundle/Forms/TermDeleteForm.php" />
@@ -195,7 +187,6 @@
         <option value="$PROJECT_DIR$/src/AppBundle/UserBundle/Entity/Role.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/UserBundle/Forms/UserForm.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/UserBundle/DataFixtures/ORM/UserLoad.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/PageBundle/DataFixtures/ORM/PageLoad.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/CommentBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/CommentBundle/Forms/CommentForm.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/CommentBundle/Repository/CommentRepository.php" />
@@ -237,6 +228,8 @@
         <option value="$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/view.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/list.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/PageBundle/DataFixtures/ORM/PageLoad.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/TermBundle/DataFixtures/ORM/TermLoad.php" />
       </list>
     </option>
   </component>
@@ -302,89 +295,58 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="symfony_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog-symfony" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="symfony_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="symfony_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="symfony_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="symfony_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog-symfony" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="symfony_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog-symfony" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="symfony_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog-symfony" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="PageBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="CommentBundle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="symfony_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog-symfony" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="PageBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="CommentBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="DataFixtures" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="symfony_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog-symfony" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="PageBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="CommentBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="DataFixtures" type="462c0819:PsiDirectoryNode" />
+              <item name="ORM" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="symfony_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="PageBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="symfony_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="PageBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Page" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog-symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -510,6 +472,7 @@
       <workItem from="1559907339155" duration="1809000" />
       <workItem from="1559994230964" duration="5585000" />
       <workItem from="1560154576173" duration="14870000" />
+      <workItem from="1560180443720" duration="322000" />
     </task>
     <servers />
   </component>
@@ -525,7 +488,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267208000" />
+    <option name="totallyTimeSpent" value="267530000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -538,8 +501,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1881663" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19029851" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="0" />
@@ -589,27 +553,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/AdminBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/UserBundle/Entity/UserAccount.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/UserBundle/Resources/views/Page/register.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" selection-start-line="4" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/UserBundle/Forms/LoginForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -751,13 +694,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11872">
-          <caret line="424" selection-start-line="424" selection-end-line="424" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/custom.css" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/views/Page/delete.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -768,20 +705,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/AdminBundle/Resources/views/sidebar.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/AdminBundle/Resources/views/flashMessage.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/AdminBundle/Resources/views/sidebar.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/AdminBundle/Resources/views/flashMessage.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/AdminBundle/Controller/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
@@ -792,13 +717,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/AdminBundle/Resources/views/paginator.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/AdminBundle/Resources/views/paginator.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/CommentBundle/Resources/views/ViewMode/teaser.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -878,16 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/page_category.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#12#52#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/page_comments.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
@@ -929,13 +838,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/views/ViewMode/menucategory.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="61" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/views/ViewMode/menucategory.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/views/ViewMode/teaser.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -943,53 +846,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Layout/layout-two-col-4-8.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/ViewMode/categorylist.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/ViewMode/teaser.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="2" column="106" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/views/Page/list.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding>
-            <element signature="e#12#52#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/list.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#12#52#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1000,13 +870,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/ViewMode/categorylist.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/PageBundle/Resources/views/Page/page_category.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <folding>
+            <element signature="e#12#52#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/CommentBundle/DataFixtures/ORM/CommentLoad.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/TermBundle/Resources/views/Page/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/PageBundle/Controller/PageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1214">
+        <state relative-caret-position="819">
           <caret line="106" column="42" selection-start-line="106" selection-start-column="42" selection-end-line="106" selection-end-column="42" />
           <folding>
             <element signature="e#132#175#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/PageBundle/DataFixtures/ORM/PageLoad.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/TermBundle/DataFixtures/ORM/TermLoad.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>

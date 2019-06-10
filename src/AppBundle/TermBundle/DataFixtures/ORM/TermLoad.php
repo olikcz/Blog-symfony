@@ -13,19 +13,16 @@ use Doctrine\Common\Persistence\ObjectManager;
 
 class TermLoad extends Fixture
 {
-
     public function load(ObjectManager $manager)
     {
         for($i=1; $i <= 3; $i++){
             $term = new Term();
-            $term->setName("Term ".$i);
-            $term->setDescription('DESCRIPTION '.$i);
+            $term->setName("Category ".$i);
+            $term->setDescription('Description '.$i);
             $manager->persist($term);
         }
         $manager->flush();
     }
-
-
 }
 
 
