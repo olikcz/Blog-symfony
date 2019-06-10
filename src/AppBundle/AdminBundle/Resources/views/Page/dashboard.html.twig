@@ -2,10 +2,41 @@
 
 {% block body %}
   <div class="row">
-    {{ include('@Admin/sidebar.html.twig') }}
-
-    <div class="col-md-6 mt-3">
-      {{ include('@Admin/flashMessage.html.twig') }}
+      <div class="col-md-2 mt-3">
+        <div class="list-group">
+          <p class="list-group-item list-group-item-action active"></p>
+          <a href="{{ path('page_add') }}" class="list-group-item list-group-item-action">Add page</a>
+          <a href="{{ path('term_add') }}" class="list-group-item list-group-item-action">Add category</a>
+          <a href="{{ path('add_user_role') }}" class="list-group-item list-group-item-action">Add user role</a>
+          <a href="{{ path('delete_user_role') }}" class="list-group-item list-group-item-action">Delete role from user</a>
+        </div>
+      </div>
+   
+      <div class="col-md-6 mt-3">
+        {% for message in app.flashes('success') %}
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        {% endfor %}
+        {% for message in app.flashes('info') %}
+          <div class="alert alert-info alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        {% endfor %}
+        {% for message in app.flashes('warning') %}
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        {% endfor %}
       <table class="table">
         <thead>
         <tr>

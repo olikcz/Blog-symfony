@@ -10,13 +10,16 @@
       </span>
     <div class="block block-content">
       <a href="{{ path('page_view', {'id' : page.id}) }}"><h2 class="field field-title">{{ page.title }}</h2></a>
+      <small>Category: <a href="{{ path('page_term', { 'id' : page.category.id}) }}">{{ page.category }}</a>,
+        by <a href="{{ path('page_user', { 'id' : page.user.id }) }}">{{ page.user.username }}</a> on {{ page.created|date("H:i d/m/Y") }}
+        {% if page.updatedAt != null %}
+          <div class="field field-updated">{{ page.updatedAt |date("H:i d/m/Y") }}</div>
+        {% endif %}
+      </small>
+      <hr>
       <div class="field field-body">{{ page.body }}</div>
-      <div class="field field-category">{{ page.category.name }}</div>
-      <div class="field field-created">{{ page.created |date("H:i d/m/Y") }}</div>
-      {% if page.updatedAt != null %}
-        <div class="field field-updated">{{ page.updatedAt |date("H:i d/m/Y") }}</div>
-      {% endif %}
-      <div class="field field-comments">
+      <hr>
+      <div class="field field-comments mt-3">
         <div class="comment-preview">
           <h2 class="comment-title">Comments</h2>
           {% if is_granted('ROLE_USER') or is_granted('ROLE_ADMIN')  %}
