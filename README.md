@@ -2,9 +2,11 @@
 
 # Installation:
 
+```
 $ git clone https://github.com/olikcz/Blog-symfony.git
 $ cd Blog-symfony
 $ composer install
+```
 
 ```
 $ php bin/console doctrine:database:create
