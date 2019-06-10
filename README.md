@@ -1,15 +1,36 @@
-Symfony Standard Edition
-========================
+# Simple blog based on symfony 3.
 
-**WARNING**: This distribution does not support Symfony 4. See the
-[Installing & Setting up the Symfony Framework][15] page to find a replacement
-that fits you best.
+# Installation:
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony
-application that you can use as the skeleton for your new applications.
+```
+$ git clone https://github.com/olikcz/Blog-symfony.git
+$ cd Blog-symfony
+$ composer install
+```
 
-For details on how to download and get started with Symfony, see the
-[Installation][1] chapter of the Symfony Documentation.
+```
+$ php bin/console doctrine:database:create
+$ php bin/console doctrine:schema:update --force
+$ php bin/console doctrine:fixtures:load
+```
+
+```
+$ php bin/console server:run
+```
+
+```
+ rename
+  symfony_blog\app\config\parameters.yml.dist 
+ to
+  symfony_blog\app\config\parameters.yml
+```
+
+
+# Login
+username: admin
+password: 123456
+
+
 
 What's inside?
 --------------
